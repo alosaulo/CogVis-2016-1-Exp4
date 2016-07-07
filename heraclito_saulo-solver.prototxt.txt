@@ -1,0 +1,20 @@
+net: "heraclito_saulo-train-test.prototxt.txt"
+#  original 1 
+test_iter: 55
+# 
+test_interval: 100
+# original 0.0001
+base_lr: 0.001
+# 
+lr_policy: "fixed"
+#gamma: 0.001
+#power: 0.75
+# 
+display: 100
+# 
+max_iter: 10000
+# 
+snapshot: 1000
+snapshot_prefix: "snapshots/"
+# 
+solver_mode: GPU

@@ -1,2 +1,1 @@
-caffe train -solver heraclito-solver.prototxt -weights VGG_FACE.caffemodel
-caffe train -solver heraclito-solver.V1.prototxt.txt -weights VGG_FACE.caffemodel
+caffe train -solver heraclito_saulo.solver.prototxt -weights VGG_FACE.caffemodel -gpu 0
