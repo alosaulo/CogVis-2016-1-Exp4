@@ -12,6 +12,8 @@ Pré-requisitos:
 
 Para mais detalhes sobre a execução do projeto, visite a página execução.
 
+**TUTORIAL**
+
 O arquivo getfilenames.sh deve ser executado dentro do repositório, que deve ser chamado arfaces, navegue até o diretório e utilize o comando abaixo. 
 
 > bash getfilenames.sh >& arfaces-data.txt
@@ -24,4 +26,8 @@ Divida cada linha dos arfaces-data.txt em dois arquivos:
 
 >m-061 até m-076 e w-046 até w-60 em arfaces-expression-data.2.txt
 
+**Caso já possua todos os arquivos, pule para o passo abaixo.**
+
 Execute o arquivo run.sh para começar a realizar a execução do experimento. 
+
+Caso não possua hardware de video para executar o experimento, remova o parâmetro: ´-gpu 0´
