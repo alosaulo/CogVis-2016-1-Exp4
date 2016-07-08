@@ -14,20 +14,24 @@ Para mais detalhes sobre a execução do projeto, visite a página execução.
 
 **TUTORIAL**
 
-O arquivo getfilenames.sh deve ser executado dentro do repositório, que deve ser chamado arfaces, navegue até o diretório e utilize o comando abaixo. 
+**Caso já possua todos os arquivos no diretório, pule para o passo 4**.
+
+1- Jogue o repositório de imagens do arfaces e o model VGG Face na pasta do experimento.
+
+2- O arquivo getfilenames.sh deve ser executado dentro do repositório, que deve ser chamado arfaces, navegue até o diretório e utilize o comando abaixo. 
 
 > bash getfilenames.sh >& arfaces-data.txt
 
-Tal comando gerará uma saída contendo o arquivo de texto com o caminho de cada imagem na pasta.
+Tal comando gerará uma saída contendo um arquivo de texto com o caminho de cada imagem na pasta.
 
-Divida cada linha dos arfaces-data.txt em dois arquivos:
+3- Divida cada linha dos arfaces-data.txt em dois arquivos:
 
 >m-001 até m-060 e w-001 até w-45 em arfaces-expression-data.1.txt
 
 >m-061 até m-076 e w-046 até w-60 em arfaces-expression-data.2.txt
 
-**Caso já possua todos os arquivos, pule para o passo abaixo.**
+4- Execute o arquivo run.sh para começar a realizar a execução do experimento. 
 
-Execute o arquivo run.sh para começar a realizar a execução do experimento. 
+**OBS:** Caso não detenha hardware gráfico para a execução do experimento, remova o parâmetro:
 
-Caso não possua hardware de video para executar o experimento, remova o parâmetro: ´-gpu 0´
+`-gpu 0`
